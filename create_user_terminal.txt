@@ -1,0 +1,7 @@
+$ flask shell
+>>> user = User(username="admin", password="123")
+>>> user
+<User (transient 4373647440)>
+>>> db.session.add(user)
+>>> db.session.commit()
+>>> exit()
